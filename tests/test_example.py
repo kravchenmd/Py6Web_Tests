@@ -34,6 +34,7 @@ class TestExample(unittest.TestCase):
         """Sub function test"""
         self.assertEqual(mul(2, 3), 6)
 
+    @unittest.skip("Not ready yet")
     def test_div(self):
         """Sub function test"""
         self.assertAlmostEqual(div(2, 3), 0.66666666)
