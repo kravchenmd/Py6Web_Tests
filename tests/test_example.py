@@ -37,6 +37,8 @@ class TestExample(unittest.TestCase):
     def test_div(self):
         """Sub function test"""
         self.assertAlmostEqual(div(2, 3), 0.66666666)
+        with self.assertRaises(ZeroDivisionError) as cm:
+            div(1, 0)
 
 
 class TestAsyncExample(unittest.IsolatedAsyncioTestCase):
